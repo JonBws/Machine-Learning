@@ -38,12 +38,12 @@ server <- function(input, output) {
     # do prediction using model
     prediction_result <- predict_using_model(lag_2_value, lag_3_value)
     
-    # Tampilkan hasil prediksi
+    # display output prediction
     output$prediction_output <- renderText({
       paste("Inflation Prediction:", prediction_result)
     })
   })
 }
 
-# Jalankan aplikasi Shiny
+# run shiny app
 shinyApp(ui = ui, server = server)
