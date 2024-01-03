@@ -1,0 +1,13 @@
+{% extends 'home.html' %} {% block title%} Result {% endblock %} {% block result%}
+<h2>
+  {% if result==0 %}
+  <div class="negatif">
+    <h3>Negative Review</h3>
+  </div>
+  {% else %}
+  <div class="positif">
+    <h3>Positive Review</h3>
+  </div>
+  {% endif %}
+</h2>
+{% endblock %}

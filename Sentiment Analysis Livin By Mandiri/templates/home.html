@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title%} {% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Rethink+Sans:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}" />
+  </head>
+  <body>
+    <h2>Sentiment Analysis Livin By Mandiri</h2>
+    <div class="form-container">
+      <form action="{{ url_for('predict') }}" method="post">
+        <textarea name="review" class="form-control text-center" cols="50" rows="10" placeholder="Write Your Review" required></textarea><br />
+        <input type="submit" value="PREDICT" />
+      </form>
+    </div>
+
+    {% block result%} {% endblock %}
+  </body>
+</html>

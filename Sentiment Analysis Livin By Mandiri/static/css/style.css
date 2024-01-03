@@ -1,0 +1,42 @@
+body {
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+h2 {
+  font-family: "DM Serif Display", serif;
+}
+
+.container {
+  text-align: center;
+}
+
+.form-container {
+  margin-top: 15px;
+}
+
+textarea {
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.positif {
+  color: green;
+  letter-spacing: 2px;
+}
+
+.negatif {
+  color: red;
+  letter-spacing: 2px;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  font-size: medium;
+  color: white;
+  background-color: forestgreen;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
