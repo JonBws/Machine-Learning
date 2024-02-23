@@ -13,5 +13,4 @@ In this project, I used the supervised technique support vector regression to pr
 - Built a user-friendly Shiny web app that allows users to input inflation value and view predicted inflation rates.
 
 ## Result
-it show that 
 ![GIF](Resource/web-app.gif)
